@@ -1,6 +1,7 @@
 package me.wheezygold.skripthack;
 
 import ch.njol.skript.Skript;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -19,6 +20,10 @@ public class SkriptHack extends JavaPlugin implements Listener {
     public void onEnable() {
         instance = this;
         if (getServer().getPluginManager().getPlugin("Skript")!=null) {
+            log("Starting Metrics...");
+            Metrics metrics = new Metrics(this);
+            metrics.addCustomChart(new Metrics.SimplePie("skript_version", () -> Bukkit.getServer().getPluginManager().getPlugin("Skript").getDescription().getVersion()));
+            log("Loaded Metrics!");
             try {
                 Skript.registerAddon(this).loadClasses("me.wheezygold.skripthack", "skript");
             } catch (IOException e) {
@@ -26,6 +31,7 @@ public class SkriptHack extends JavaPlugin implements Listener {
             }
         } else {
             log("We cannot hack skript when skript is not loaded.");
+            Bukkit.getServer().getPluginManager().disablePlugin(this);
         }
     }
 
