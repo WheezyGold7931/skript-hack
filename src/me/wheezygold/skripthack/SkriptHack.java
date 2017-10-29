@@ -24,10 +24,14 @@ public class SkriptHack extends JavaPlugin implements Listener {
             Metrics metrics = new Metrics(this);
             metrics.addCustomChart(new Metrics.SimplePie("skript_version", () -> Bukkit.getServer().getPluginManager().getPlugin("Skript").getDescription().getVersion()));
             log("Loaded Metrics!");
-            try {
-                Skript.registerAddon(this).loadClasses("me.wheezygold.skripthack", "skript");
-            } catch (IOException e) {
-                e.printStackTrace();
+            if (Skript.isAcceptRegistrations()) {
+                try {
+                    Skript.registerAddon(this).loadClasses("me.wheezygold.skripthack", "skript");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                log("Funny, you're trying to run skript-hack, a plugin that loads syntax when ");
             }
         } else {
             log("We cannot hack skript when skript is not loaded.");

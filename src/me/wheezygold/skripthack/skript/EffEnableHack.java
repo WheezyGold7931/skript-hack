@@ -5,10 +5,16 @@ import ch.njol.skript.lang.Effect;
 import ch.njol.skript.lang.Expression;
 import ch.njol.skript.lang.SkriptParser;
 import ch.njol.util.Kleenean;
+import me.wheezygold.skripthack.SKU;
 import me.wheezygold.skripthack.SkriptHack;
 import org.bukkit.event.Event;
 
 @SuppressWarnings("unused")
+@SKU.data(
+        name = "Enable Skript Registrations",
+        desc = "Opens Skript's registrations for any new syntax elements.",
+        example = "enable skript-hack"
+)
 public class EffEnableHack extends Effect {
 
     static {
