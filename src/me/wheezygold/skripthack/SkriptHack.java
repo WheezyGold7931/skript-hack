@@ -86,7 +86,7 @@ public class SkriptHack extends JavaPlugin implements Listener {
         System.out.println("[skript-hack] " + message);
     }
 
-    public static SkriptHack getInstace() {
+    public static SkriptHack getInstance() {
         return instance;
     }
 

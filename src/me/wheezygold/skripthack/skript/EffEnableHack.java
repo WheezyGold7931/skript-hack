@@ -18,7 +18,7 @@ public class EffEnableHack extends Effect {
     @Override
     protected void execute(Event event) {
         try {
-            SkriptHack.getInstace().hackSkript(true);
+            SkriptHack.getInstance().hackSkript(true);
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
