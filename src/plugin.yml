@@ -1,0 +1,12 @@
+main: me.wheezygold.skripthack.SkriptHack
+name: skript-hack
+version: 0.1
+author: WheezyGold7931
+description: Bypass Skript's registration at startup limits.
+softdepend: [Skript]
+commands:
+  skript-hack:
+    description: Command to toggle the skript-hack.
+    usage: /skript-hack <true/false>
+    permission: skript-hack.toggle
+    permission-message: You don't have the skript-hack.toggle permission.
