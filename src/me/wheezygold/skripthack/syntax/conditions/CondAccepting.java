@@ -1,11 +1,11 @@
-package me.wheezygold.skripthack.skript;
+package me.wheezygold.skripthack.syntax.conditions;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.lang.Condition;
 import ch.njol.skript.lang.Expression;
 import ch.njol.skript.lang.SkriptParser;
 import ch.njol.util.Kleenean;
-import me.wheezygold.skripthack.SKU;
+import me.wheezygold.skripthack.util.SKU;
 import org.bukkit.event.Event;
 
 @SuppressWarnings("unused")
