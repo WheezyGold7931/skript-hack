@@ -1,4 +1,4 @@
-package me.wheezygold.skripthack;
+package me.wheezygold.skripthack.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -17,13 +17,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.logging.Level;
 import java.util.zip.GZIPOutputStream;

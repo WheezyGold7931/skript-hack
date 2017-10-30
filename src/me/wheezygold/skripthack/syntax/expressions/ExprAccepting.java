@@ -1,4 +1,4 @@
-package me.wheezygold.skripthack.skript;
+package me.wheezygold.skripthack.syntax.expressions;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.lang.Expression;
@@ -6,7 +6,7 @@ import ch.njol.skript.lang.ExpressionType;
 import ch.njol.skript.lang.SkriptParser;
 import ch.njol.skript.lang.util.SimpleExpression;
 import ch.njol.util.Kleenean;
-import me.wheezygold.skripthack.SKU;
+import me.wheezygold.skripthack.util.SKU;
 import org.bukkit.event.Event;
 
 @SuppressWarnings("unused")

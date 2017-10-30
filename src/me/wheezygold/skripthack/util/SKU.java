@@ -1,4 +1,4 @@
-package me.wheezygold.skripthack;
+package me.wheezygold.skripthack.util;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
