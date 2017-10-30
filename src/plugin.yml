@@ -1,6 +1,6 @@
 main: me.wheezygold.skripthack.SkriptHack
 name: skript-hack
-version: 0.1
+version: 0.2
 author: WheezyGold7931
 description: Bypass Skript's registration at startup limits.
 softdepend: [Skript]
